@@ -1,7 +1,7 @@
 name: expandable_fab
-description: A new Flutter package project.
+description: Widget to show an animated floating action button which turns into a modal.
 version: 0.0.1
-homepage:
+homepage: https://github.com/ajomuch92/expandable_fab
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
