@@ -134,4 +134,11 @@ class ExpandableFabState extends State<ExpandableFab> {
       ),
     );
   }
+
+  void close() {
+    setState(() {
+      visible = false;
+      expanded = false;
+    });
+  }
 }
