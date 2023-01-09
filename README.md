@@ -3,7 +3,7 @@
 
 Widget to show an animated floating action button which turns into a modal.
 
-<img src="https://raw.githubusercontent.com/ajomuch92/expandable_fab/main/demo.gif" width="200" height="429"/>
+<img src="https://raw.githubusercontent.com/ajomuch92/full_expandable_fab/main/demo.gif" width="200" height="429"/>
 
 
 
@@ -89,10 +89,10 @@ class MyHomePage extends StatelessWidget {
 
 - [@ajomuch92](https://www.github.com/ajomuch92)
 
-Feel free to [open a PR](https://github.com/ajomuch92/expandable_fab/pulls) or [create an issue](https://github.com/ajomuch92/expandable_fab/issues) to contribute to this package.
+Feel free to [open a PR](https://github.com/ajomuch92/full_expandable_fab/pulls) or [create an issue](https://github.com/ajomuch92/full_expandable_fab/issues) to contribute to this package.
 
 
 ## License
 
-[MIT](https://github.com/ajomuch92/expandable_fab/blob/main/LICENSE)
+[MIT](https://github.com/ajomuch92/full_expandable_fab/blob/main/LICENSE)
 
