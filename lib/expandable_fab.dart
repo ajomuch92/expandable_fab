@@ -86,7 +86,7 @@ class ExpandableFabState extends State<ExpandableFab> {
                     height: expanded ? windowSize.height : size,
                     padding: expanded
                         ? const EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 10.0)
+                            horizontal: 20.0, vertical: 30.0)
                         : EdgeInsets.zero,
                     decoration: BoxDecoration(
                       color: expanded
@@ -112,9 +112,9 @@ class ExpandableFabState extends State<ExpandableFab> {
                                             expanded = false;
                                           });
                                         },
-                                        icon: const Icon(
+                                        icon: Icon(
                                           Icons.close,
-                                          color: Colors.white,
+                                          color: widget.closeIconColor,
                                         ))
                                   ],
                                 ),
