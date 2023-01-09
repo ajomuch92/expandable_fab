@@ -36,10 +36,10 @@ class ExpandableFab extends StatefulWidget {
       : super(key: key);
 
   @override
-  _ExpandableFabState createState() => _ExpandableFabState();
+  ExpandableFabState createState() => ExpandableFabState();
 }
 
-class _ExpandableFabState extends State<ExpandableFab> {
+class ExpandableFabState extends State<ExpandableFab> {
   /// Boolean value to indicate when modal it's expanded
   bool expanded = false;
 
