@@ -1,5 +1,5 @@
 
-# Expandable FAB
+# Full Expandable FAB
 
 Widget to show an animated floating action button which turns into a modal.
 
@@ -9,13 +9,13 @@ Widget to show an animated floating action button which turns into a modal.
 
 
 ## Instalation
-Include `expandable_fab` in your `pubspec.yaml` file:
+Include `full_expandable_fab` in your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
-  expandable_fab: version
+  full_expandable_fab: version
 ```
 ## API Reference
 
@@ -38,7 +38,7 @@ dependencies:
 ## Example
 
 ```dart
-import 'package:expandable_fab/expandable_fab.dart';
+import 'package:full_expandable_fab/expandable_fab.dart';
 
 ...
 

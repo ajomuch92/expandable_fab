@@ -1,7 +1,7 @@
-name: expandable_fab
+name: full_expandable_fab
 description: Widget to show an animated floating action button which turns into a modal.
 version: 0.0.1
-homepage: https://github.com/ajomuch92/expandable_fab
+homepage: https://github.com/ajomuch92/full_expandable_fab
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
