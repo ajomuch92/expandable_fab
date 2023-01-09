@@ -1,39 +1,98 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# Expandable FAB
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+Widget to show an animated floating action button which turns into a modal.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+<img src="https://raw.githubusercontent.com/ajomuch92/expandable_fab/main/demo.gif" width="200" height="429"/>
 
-## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Instalation
+Include `expandable_fab` in your `pubspec.yaml` file:
 
-## Usage
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  expandable_fab: version
+```
+## API Reference
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+#### Props
+
+
+| Name | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `child`      | `Widget` | **Required** Widget to wrap it. It's recommended to use a Scafold here. |
+| `innerChild`      | `Widget` | **Required** Widget to show into the expanded modal. |
+| `icon`      | `Icon` | **Required**. Icon to use into the initial floating button. |
+| `closeIconColor`      | `Color` |  Color for the close icon. By default, it's white |
+| `buttonBackgroundColor`      | `Color` | Color to use as background for floating action button. By default it's the primary color of the theme. |
+| `backgroundColor`      | `Color` | Color to use as background of the expanded modal. By default is  Color.fromRGBO(0, 0, 0, 0.5) |
+| `duration`      | `Duration` | Duration for the animation. By default is 250ms. |
+
+
+
+
+## Example
 
 ```dart
-const like = 'sample';
+import 'package:expandable_fab/expandable_fab.dart';
+
+...
+
+class MyHomePage extends StatelessWidget {
+  final String title;
+  final GlobalKey<ExpandableFabState> keyFab = GlobalKey<ExpandableFabState>();
+
+  MyHomePage({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ExpandableFab(
+      key: keyFab,
+      backgroundColor: Colors.white,
+      closeIconColor: Colors.black,
+      duration: const Duration(milliseconds: 500),
+      innerChild: Column(
+        children: [
+          const Text('Inner widget'),
+          const TextField(),
+          ElevatedButton(
+            onPressed: () {
+              keyFab.currentState?.close();
+            }, 
+            child: const Text('Close me')
+          )
+        ],
+      ),
+      icon: const Icon(Icons.plus_one, color: Colors.white,),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: const Center(
+          child: Text(
+            'Hello, World!',
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+## Author
+
+- [@ajomuch92](https://www.github.com/ajomuch92)
+
+Feel free to [open a PR](https://github.com/ajomuch92/expandable_fab/pulls) or [create an issue](https://github.com/ajomuch92/expandable_fab/issues) to contribute to this package.
+
+
+## License
+
+[MIT](https://github.com/ajomuch92/expandable_fab/blob/main/LICENSE)
+
