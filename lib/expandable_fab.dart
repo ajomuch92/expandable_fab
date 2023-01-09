@@ -95,6 +95,13 @@ class ExpandableFabState extends State<ExpandableFab> {
                               Theme.of(context).primaryColor),
                       borderRadius:
                           BorderRadius.circular(expanded ? 0 : (size / 2)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: const Offset(0.0, 1.0),
+                          blurRadius: expanded ? 0 :  6.0,
+                        ),
+                      ],
                     ),
                     child: expanded
                         ? Visibility(
