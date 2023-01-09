@@ -1,8 +1,8 @@
-library expandable_fab;
+library full_expandable_fab;
 
 import 'package:flutter/material.dart';
 
-class ExpandableFab extends StatefulWidget {
+class FullExpandableFab extends StatefulWidget {
   /// Widget to wrap it. It's recommended to use a Scafold here.
   final Widget child;
 
@@ -24,7 +24,7 @@ class ExpandableFab extends StatefulWidget {
   /// Duration for the animation.
   final Duration duration;
 
-  const ExpandableFab(
+  const FullExpandableFab(
       {Key? key,
       required this.child,
       required this.innerChild,
@@ -39,7 +39,7 @@ class ExpandableFab extends StatefulWidget {
   ExpandableFabState createState() => ExpandableFabState();
 }
 
-class ExpandableFabState extends State<ExpandableFab> {
+class ExpandableFabState extends State<FullExpandableFab> {
   /// Boolean value to indicate when modal it's expanded
   bool expanded = false;
 
