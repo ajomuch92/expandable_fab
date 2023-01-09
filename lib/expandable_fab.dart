@@ -99,7 +99,7 @@ class ExpandableFabState extends State<ExpandableFab> {
                         BoxShadow(
                           color: Colors.grey,
                           offset: const Offset(0.0, 1.0),
-                          blurRadius: expanded ? 0 :  6.0,
+                          blurRadius: expanded ? 0 : 6.0,
                         ),
                       ],
                     ),
