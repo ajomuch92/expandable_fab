@@ -1,5 +1,5 @@
-import 'package:expandable_fab/expandable_fab.dart';
 import 'package:flutter/material.dart';
+import 'package:full_expandable_fab/full_expandable_fab.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,7 +25,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ExpandableFab(
+    return FullExpandableFab(
       key: keyFab,
       backgroundColor: Colors.white,
       closeIconColor: Colors.black,

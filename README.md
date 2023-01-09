@@ -38,7 +38,7 @@ dependencies:
 ## Example
 
 ```dart
-import 'package:full_expandable_fab/expandable_fab.dart';
+import 'package:full_expandable_fab/full_expandable_fab.dart';
 
 ...
 
